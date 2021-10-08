@@ -7,20 +7,21 @@
 /* space between boxes
 */
 .box-container {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 /* padding of box throughout app
 */
 
 .App {
-  padding: 5rem;
+  background-color:darkcyan;
+  padding: 2rem;
 }
 
 
 .box {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   background-color: blueviolet;
   display: flex;
   flex-direction: column;
