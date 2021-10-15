@@ -19,6 +19,13 @@ html {
 }
 
 /* padding of box throughout app
+ width: 20rem;
+  height: 20rem;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 */
 
 .App {
@@ -28,7 +35,7 @@ html {
 
 
 .box {
-  width: 20rem;
+   width: 20rem;
   height: 20rem;
   background-color: blueviolet;
   display: flex;
@@ -44,4 +51,14 @@ html {
   background-color: burlywood;
   list-style: none;
   margin: 1rem;
+}
+
+button {
+ color:chocolate;
+ padding: 1rem;
+ border:none;
+ margin-right: 2rem;
+ margin-bottom: 2rem;
+cursor: pointer;
+
 }

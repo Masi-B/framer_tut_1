@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import img from "./imagesBox1/sunsetPink.jpg";
 
 export default function Box1() {
   const [isAnimate, setAnimate] = useState(false);
 
   return (
-    <a href="/#box-container4">
-      <div className="box-container">
-        <motion.div
+    <div className="box-container">
+      <a href="/#box-container4">
+        <motion.img
+          src={img}
+          alt=""
           className="box"
           animate={{
             x: isAnimate ? 2222 : 0,
@@ -25,8 +27,8 @@ export default function Box1() {
             stiffness: 60,
           }}
           onClick={() => setAnimate(!isAnimate)}
-        ></motion.div>
-      </div>
-    </a>
+        ></motion.img>
+      </a>
+    </div>
   );
 }
