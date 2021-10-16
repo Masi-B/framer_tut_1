@@ -27,8 +27,34 @@ export default function Box5() {
       >
         Move Left
       </button>
-      <button>Circle</button>
-      <button>Square</button>
+      <button
+        onClick={() => {
+          control.start({
+            borderRadius: "50%",
+            transition: { duration: 1 },
+          });
+        }}
+      >
+        Circle
+      </button>
+      <button
+        onClick={() => {
+          control.start({
+            borderRadius: "0%",
+            transition: { duration: 1 },
+          });
+        }}
+      >
+        Square
+      </button>
+
+      <button
+        onClick={() => {
+          control.stop();
+        }}
+      >
+        Stop
+      </button>
 
       <a href="/#box-container4">
         <motion.img

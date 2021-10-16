@@ -6,12 +6,18 @@ import Box4 from "./components/Box4/Box4";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Box5 from "./components/Box5/Box5";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <Router>
       <Switch>
         <div className="App">
+          <section id="navbar">
+            <NavBar></NavBar>
+            
+          </section>
+          
           <section id="box-container">
             <Route exact path="/">
               <Box1></Box1>
